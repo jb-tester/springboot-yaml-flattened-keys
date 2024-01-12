@@ -3,13 +3,14 @@ management.endpoint.health.group.foo.include: fooState
 management.endpoint.health.group.buss.roles: AAA
 management.endpoint.health.group.bar.exclude: oneState, twoState
 
-my.map.props.map-of-maps.foo.bar.key: test1_value
-my.map.props.map-of-strings.aaa.bbb.ccc: test1_value
-my.map.props.enumkeys.key1: test1_value
+my.map.props.map-of-maps.foo.bar.key: ' test1 profile: fully flattened map of maps value for key foo(bar.key)'
+my.map.props.map-of-strings.aaa.bbb.ccc: ' test1 profile: fully flattened map of strings value for key aaa.bbb.ccc'
+my.map.props.enumkeys.key1: ' test1 profile: fully flattened map value for enum key key1'
 
 my.map.props:
-  enumkeys.key2: test1_value1
-  map-of-strings.ddd.eee.fff: test1_value1
+  enumkeys.key2: ' test1 profile: partially flattened map value for enum key key1'
+  map-of-strings.ddd.eee.fff: ' test1 profile: partially flattened map of strings value for key ddd.eee.fff'
+  map-of-maps.bar.buzz.key: ' test1 profile: partially flattened map of maps value for key bar(buzz.key)'
 
 logging.group.first: com.*
 logging.group.second: javax.*

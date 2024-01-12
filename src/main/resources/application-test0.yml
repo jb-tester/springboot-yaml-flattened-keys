@@ -35,6 +35,11 @@ my.map.props:
   map-of-strings:
         aaa.bbb.ccc: test0_value
 
+my.map.props.enumkeys:
+    key2: test0_value
+my.map.props.map-of-strings:
+    ddd.eee.fff: test0_value
+
 
 my.nested.props:
   nested:
