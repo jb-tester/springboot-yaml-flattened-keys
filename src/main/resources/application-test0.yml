@@ -1,0 +1,43 @@
+spring.application.name: flattened-keys-test
+management.metrics.tags:
+  application: ${spring.application.name}
+management.metrics.distribution.percentiles-histogram:
+  http.server.requests: true
+  resilience4j.circuitbreaker.calls: true
+
+management.endpoint:
+  beans.enabled: true
+  health.group:
+        foo.include:
+          - fooState
+        buss.roles:
+          - AAA
+        bar.exclude:
+          - oneState
+          - twoState
+
+logging.group:
+  first: com.example.demo
+  second: javax.*
+  third: org.*
+logging.level:
+    first: trace
+    second: debug
+    third: off
+
+my.map.props.map-of-maps:
+        foo.bar.key: test0_value1
+        extra.super.key: test0_value2
+        buzz.key: test0_value3
+my.map.props:
+  enumkeys:
+    key1: test0_value
+  map-of-strings:
+        aaa.bbb.ccc: test0_value
+
+
+my.nested.props:
+  nested:
+    deep.deep-nested-str: test0_aaa
+    nested-str: test0_bbb
+  top-str: test0_ccc
