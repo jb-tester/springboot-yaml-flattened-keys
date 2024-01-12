@@ -17,13 +17,14 @@ management.endpoint:
           - twoState
 
 logging.group:
-  first: com.example.demo
+  first: com.*
   second: javax.*
   third: org.*
 logging.level:
-    first: trace
+    first: debug
     second: debug
-    third: off
+    third: debug
+    com.example.demo: trace
 
 my.map.props.map-of-maps:
         foo.bar.key: test0_value1

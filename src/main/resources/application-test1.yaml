@@ -14,11 +14,12 @@ my.map.props:
 
 logging.group.first: com.*
 logging.group.second: javax.*
-logging.group.third: org.*
+logging:
+  group.third: org.*
+  level.third: debug
 
 logging.level.first: debug
 logging.level.second: debug
-logging.level.third: debug
 
 logging.level.com.example.demo: trace
 
