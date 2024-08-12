@@ -26,3 +26,6 @@ logging.level.com.example.demo: trace
 my.nested.props.nested.deep.deep-nested-str: test1_aaa
 my.nested.props.nested.nested-str: test1_bbb
 my.nested.props.top-str: test1_ccc
+
+## used in @Value
+some.dummy.props: dummy

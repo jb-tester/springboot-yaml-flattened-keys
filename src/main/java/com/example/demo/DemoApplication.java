@@ -2,12 +2,15 @@ package com.example.demo;
 
 import com.example.demo.config.MapConfigProperties;
 import com.example.demo.config.WithNestedPojoConfigProperties;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class DemoApplication implements CommandLineRunner  {
+    @Value("${some.dummy.props}")
+    String dummy;
 
     private final MapConfigProperties mapConfigProperties;
     private final WithNestedPojoConfigProperties withNestedPojoConfigProperties;

@@ -47,3 +47,6 @@ my.nested.props:
     deep.deep-nested-str: test0_aaa
     nested-str: test0_bbb
   top-str: test0_ccc
+
+## used in @Value
+some.dummy.props: dummy
